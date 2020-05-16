@@ -1,11 +1,18 @@
 Car c;
 Road r;
 
+float offset;
+
 void setup()
-{
-  size(500, 500, P2D);
-  c = new Car(10, height/2, 100);
+{  
+  float carW = width/7;
+  float carOffset = carW/10;
+  
+  size(1920, 1080, P2D);
+  c = new Car(0, height/2 + carOffset, carW);
   r = new Road();
+  
+  offset = carOffset;
 }
 
 void draw()

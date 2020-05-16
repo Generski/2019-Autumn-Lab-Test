@@ -16,5 +16,15 @@ class Road
     noStroke();
     fill(100);
     rect(x, y, w, h);
+    
+    for(int i = 0 ; i < w ; i+= w/10)
+    {
+      float lineW = w/20;
+      float lineH = h/30;
+      
+      noStroke();
+      fill(255);
+      rect(0 + i, height/2 - lineH/2, lineW, lineH);
+    }
   }
 }
